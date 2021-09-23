@@ -1,0 +1,261 @@
+* {margin:0;padding: 0; font-family: 'Avenir',sans-serif;}
+
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+nav ul {
+    background-color: white;
+    text-align: center;
+    height: 50px;
+}
+
+nav ul li {
+    display: inline-block;   
+    width: 20%;
+    margin: 1%;
+}
+
+nav ul li:nth-child(even) {
+    display: inline-block;   
+    width: 1%;
+}
+
+nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fb904a;  
+    font-family: 'Avenir', sans-serif;
+}
+
+nav ul li a:hover{
+    color: black;  
+}
+
+header {
+    position: relative;
+    top: 50px;
+}
+
+header img {
+    width: 100%;
+    max-height: auto;
+}
+
+main {
+    position: relative;
+    top: 50px;
+
+}
+
+main section {
+    width: 100%;
+}
+
+
+main section:first-child article {
+    margin: 5%;
+    text-align: center;
+}
+
+main section:first-child article p, a {
+    display: inline-block;
+    margin: 0% 1%;
+}
+
+main section:first-child article p {
+    font-size: 25px;
+}
+
+main section:first-child article a {
+    text-decoration: none;
+    color: #fb904a;
+    border: 3px solid #fb904a;
+    border-radius: 20% / 50%;
+    padding: 1%;
+    font-size: 20px;
+}
+
+main section:first-child article a:hover {
+    color: black;
+    border: 3px solid black;
+}
+
+main section:nth-child(n+2) {
+   height: 400px;
+}
+
+main section .fond {
+    float: left;
+    width: 50%;
+    background-size:cover;
+    height: 100%;
+}
+
+main section:nth-child(2) .fond {
+    background-image: url(../images/event/defense.jpg);
+}
+
+main section .txt {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.back {
+    background-image: url(../images/event/fond.jpg);
+    color: white;
+
+}
+
+main section .txt > div {
+    margin: 9%;
+}
+
+main section .txt > div .para {
+   margin: 8% 0%; 
+}
+
+main section .separator-w {
+    height: 3px;
+    background-color: white;
+    width: 50%;
+    margin: 1% 0% 4% 0%;
+}
+
+main section .txt a {
+    text-decoration: none;
+    color: white;
+    border: 3px solid white;
+    border-radius: 20% / 50%;
+    padding: 2%;
+    font-size: 20px;
+}
+
+main section .txt .orange-button {
+    text-decoration: none;
+    color: #fb904a;
+    border: 3px solid #fb904a;
+    border-radius: 20% / 50%;
+    padding: 2%;
+    font-size: 20px;
+}
+
+main section .txt .orange-button:hover {
+    color: black;
+    border: 3px solid black;
+}
+
+main section .txt h2 {
+    font-size: 30px;
+    margin-bottom: 2%;
+}
+
+main section:nth-child(2) .txt a:hover {
+    color: black;
+    border: 3px solid black;
+}
+
+main section:nth-child(2) .txt p {
+   margin-top: 1%;
+}
+
+main section:nth-child(3) .fond {
+    background-image: url(../images/event/acces.jpg);
+}
+
+main section:nth-child(4) .fond {
+    background-image: url(../images/event/prog.jpg);
+    background-position:center;
+}
+
+main section:nth-child(5) {
+    height: 300px;
+    width: 70%;
+    margin: auto;
+}
+
+main section:nth-child(5) h2 {
+    text-align: center;
+    margin: 5% 0% 1% 0%;
+}
+
+main section:nth-child(5) .separator {
+    height: 3px;
+    background-color: black;
+    width: 20%;
+    margin:auto;
+}
+
+main section:nth-child(5) article {
+    float: left;
+    width: 25%;
+    margin-top: 5%;
+}
+
+main section:nth-child(5) article a {
+    text-align: center;
+}
+
+main section:nth-child(5) article img {
+    width: 50%;
+}
+
+footer {
+    height: 200px;
+    background-color: #2f2f40;
+    color: white
+}
+
+footer article {
+    float: left;
+    width: 30%;
+}
+
+footer article:nth-child(even) {
+    width: 5%;
+}
+
+footer article:nth-child(even) div {
+    background-color: white;
+    width: 4%;
+    height: 100px;
+    margin: 50% 25%;
+}
+
+footer article:nth-child(odd) div {
+    padding: 10% 0%;
+}
+
+footer article a {
+    width: 100%;
+    text-align: center;
+    margin: 2% 0%;
+    text-decoration: none;
+    color: white;
+}
+
+footer article div p {
+    text-align: center;
+    margin: 2% 0%;
+    color: white;
+}
+
+footer article a:hover {
+    color: #fb904a;
+}
+
+footer article:nth-child(3) div {
+    width: 100%;
+}
+
+footer article:nth-child(5) div {
+    padding: 5% 0%;
+}
+
+
+

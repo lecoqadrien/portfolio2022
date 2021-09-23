@@ -1,0 +1,328 @@
+@font-face {
+ font-family: "Open Sans";
+ src: url("/font/PassionOne-Regular");
+}
+
+*{
+  margin: 0;
+  padding: 0
+}
+
+body{
+  margin: 0;
+}
+
+/*Navigation header*/
+
+header{
+  width: 100%;
+  background: none;
+}
+
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+    width: 100%;
+    background-color: orange;
+
+}
+
+nav li{
+    float: left;
+    width: 14.2857142857%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+    height: 100%;
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover{
+    color: white;
+}
+
+.etiquette {
+    background: #794319;
+}
+
+.etiquette a:hover {
+    color: orange;
+}
+
+/*Bar chronologique*/
+
+.boxbar{
+  width: 100%;
+  height: 2px;
+  position: sticky;
+  top: 5%;
+  left: 5%;
+  margin: 0 auto;
+}
+
+.bar{
+  height: 4px;
+  background: #794319;
+}
+
+
+
+
+/* ------------------*/
+
+main section {
+  width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+main section img {
+  width: 100%;
+  cursor: pointer;
+}
+
+
+main section h1 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Chelsea Market', 'Passion One' , sans-serif;
+    padding-top: 8px;
+    width: 100%;
+}
+
+main section h2 {
+    font-size: 40px;
+    font-family: 'Chelsea Market', 'Passion One' , sans-serif;
+    padding-top: 8px;
+    width: 100%;
+    margin: 3% 0%;
+}
+
+section:nth-child(even){
+  display: none;
+  marker-top: 100px;
+}
+
+section:nth-child(odd){
+  display: block;
+  margin-top: 100px;
+  font-size: 40px;
+
+}
+
+#story.is-reached {
+    opacity: 1;
+}
+
+.gris {
+    background-color:darkgrey;
+}
+
+/* Naissance partie 1 */
+
+main section:first-child > div:first-child {
+    background-image: url(../images/brush.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main section:first-child article:nth-child(2) {
+    float: left;
+    width: 60%;
+}
+
+main section:first-child article:nth-child(3) {
+    float: left;
+    width: 38%;
+    cursor: pointer;
+    margin-top: 25%;
+    color: #fb904a;
+    font-size: 25px;
+    border: 3px solid #fb904a;
+    border-radius: 10% / 60%;
+}
+
+main section:first-child article:nth-child(3):hover {
+    color: black;
+    border: 3px solid black;
+}
+
+main section:first-child article:nth-child(3) div {
+    font-family: 'Chelsea Market';
+}
+
+/* Naissance partie 2 */
+
+section:nth-child(2){
+  width: 80%;
+  height: 100%;
+  
+}
+
+section:nth-child(2) img{
+    width: 50%;
+    margin-bottom: 5%
+}
+
+section:nth-child(2) article img{
+    width: 80%;
+}
+
+section:nth-child(2) p{
+    margin-bottom: 5%;
+}
+
+section:nth-child(2) article {
+    float: left;
+    width: 50%;
+}
+
+section:nth-child(2) article:nth-child(6) {
+    
+    margin-top: 5%;
+}
+
+
+
+/*Mouvement partie 1 */
+
+main section:nth-child(3) > div:first-child {
+    background-image: url(../images/brush.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    clear: left;
+}
+
+main section:nth-child(3) article {
+    float: left;
+    width: 60%;
+}
+
+main section:nth-child(3) article:nth-child(2) {
+    float: left;
+    width: 38%;
+    cursor: pointer;
+    margin-top: 25%;
+    color: #fb904a;
+    font-size: 25px;
+    border: 3px solid #fb904a;
+    border-radius: 10% / 60%;
+}
+
+main section:nth-child(3) article:nth-child(2):hover {
+    color: black;
+    border: 3px solid black;
+}
+
+main section:nth-child(3) article:nth-child(2) div {
+    font-family: 'Chelsea Market';
+}
+
+/*Mouvement partie 2 */
+
+main section:nth-child(4) {
+    clear: left;
+    width: 80%;
+}
+
+main section:nth-child(4) article {
+    float: left;
+    width: 50%;
+}
+
+main section:nth-child(4) article img {
+    width: 50%;
+}
+
+main section:nth-child(4) article p {
+    margin: auto;
+    margin-top: 5%;   
+}
+
+main section:nth-child(4) article h3 {
+    margin: auto;
+    margin-top: 10%; 
+    font-size: 30px;
+}
+
+main section:nth-child(4) div {
+    clear: left;
+}
+
+/*Mouvement partie 1 */
+
+
+
+/*Carrousel */
+
+#carousel__slide1 {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 450px;
+    margin-left: 1rem;
+}
+
+#carousel__slide2 {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 450px;
+    margin-left: 1rem;
+}
+
+#carousel__slide3 {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 450px;
+    margin-left: 1rem;
+}
+
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+   background: orange;
+}
+
+.carousel__navigation-button {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #333;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+  display: inline-block;
+}

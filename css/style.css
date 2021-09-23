@@ -1,0 +1,547 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body  {
+    font-family: 'Arial' , sans-serif;
+}
+nav {
+    background: white;
+    color: red;
+    display: flex;
+    justify-content: space-between;
+
+}
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: red;
+    font-size: 1.5rem;
+    font-family: Lobster;
+}
+nav .mainMenu li a:hover {
+    background: white;
+}
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-facebook:hover {color: rgb(0, 110, 255);}
+.fa-twitter:hover {color: rgb(86, 154, 243);}
+.fa-instagram:hover {color: rgb(255, 0, 191);}
+.fa-github:hover {color: rgb(255, 123, 0);}
+
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+h1 {
+    color: none
+    ;
+}
+
+h2 {
+    font-family: Arial Black;
+    font-weight: bold;
+    font-size: 123px;
+  /*  -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: #d60; */
+    color: white;
+    text-align: center;
+    line-height: 25%;
+    z-index: 1;
+}
+
+h3{
+    font-family: Lobster;
+    text-align: center;
+    font-size: 91px;
+    z-index: 1;
+    color: red;
+    border-color: white;
+    mix-blend-mode: screen;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: gray;  
+    animation: 1s spin  ;
+}
+
+h4{
+    font-family: Lobster;
+    text-align: left;
+    font-size: 50px;
+    background: linear-gradient(360deg, #FF9A9A 0%, #FF9900 131.94%);  
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 40px;
+
+}
+
+p{
+    font-family: Lobster;
+    text-align: left;
+    font-size: 15px;
+    background: linear-gradient(360deg, #FF9A9A 0%, #FF9900 131.94%);  
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 40px;
+}
+
+@keyframes spin {
+    0%{ font-size : 1000px;}
+    50%{font-size: 91px;}
+    100%{font-size: 89px;}
+}
+
+@keyframes movePhoto {
+    0%{ width: 90%;}
+    50%{width: 95%;}
+    100%{width:  90%;}
+}
+
+@keyframes button {
+    0%{ height: 0%;}
+    50%{height: 50%;}
+    100%{height:  90%;}
+}
+
+header {
+   
+}
+
+#picture{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main-bot {
+    position: absolute;
+}
+
+#main-picture {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(360deg, #FF9A9A 0%, #FF9900 131.94%);    
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu-bot {
+    width: 10px;
+
+}
+
+div {
+    width: 10px;
+    height: 40px;
+    background-color: white;
+    display: block;
+    margin-top: 30px;
+}
+
+#picture-title {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.photo_accueil{
+    width: 90%;
+    border: 1px solid red;
+    opacity: 0.3;
+    /*animation: 1s movePhoto linear infinite;
+    */
+}
+
+.fleche {
+    position: absolute;
+    bottom: 100px;
+   
+}
+
+.Point{
+    height: 10px;
+    width: 10px;
+    background: linear-gradient(360deg, #FF9A9A 0%, #FF9900 131.94%);  
+    float: left; 
+    margin-left: 10px;
+}
+.photo_presentation {
+    width: 75%;
+    box-shadow: 2px 8px 31px rgba(0,0,0,0.25);
+    border-radius: 166px;
+    border: 25px solid white;
+    margin-left: 100px;
+}
+
+
+
+.photo_prod{
+    width: 40%;
+    height: 100%;
+    background: none;
+    float: left;
+    display: flex;
+    align-content: left;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation {
+    width: 60%;
+    height: 100%;
+    background:none;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quisuisje {
+    display: block;
+    height: 65%;
+    width: 90%;
+    background: white;
+    padding: 45px;
+    border-radius: 13px;
+    box-shadow: 2px 8px 31px rgba(0,0,0,0.25);
+}
+
+.access_buttons{
+    width: 50%;
+    height: 100px;
+    background: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+  button {
+    height: 60px;
+    width: 100px;
+    background: linear-gradient(360deg, #FF9A9A 0%, #FF9900 131.94%);  
+    color: white;
+    border:none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 13px;
+    cursor: pointer;
+    font-family: Lobster;
+  }
+  button:hover {
+    color: #3498db;
+  }
+  button::after {
+    content: "";
+    background: #ecf0f1;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+  }
+  button[class^="slide"]::after {
+    transition: all 0.35s;
+  }
+  button[class^="slide"]:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+  }
+  
+  button.slide_from_top::after {
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+  }
+
+/*
+img:hover{
+    width: 100%;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+    transition:  1s ease;
+    border-radius: 20%;
+    opacity: 1;
+    animation-iteration-count:infinite;
+
+}
+
+*/
+
+/*Presentation */
+
+#main-presentation {
+    background: url(../images/presentation.png);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bouton_fleche {
+    clear: left;
+}
+
+/*Projects*/
+
+#projects{
+    background: url(../images/bordures2.png);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+#projects1{
+    
+    width: 90%;
+    height: 200px;
+    background: none;
+    margin: 0 auto;
+    
+    padding: 50px;
+}
+
+.projects_title{
+    width: 30%;
+    height: 70px;
+    background: white;
+    border-radius: 13px;
+    box-shadow: 2px 8px 31px rgba(0,0,0,0.25);
+}
+
+
+
+.navigation2 {
+    float: right;
+
+}
+
+.mainMenu2 {
+    width: 600px;
+    height: 10px;
+    background: none;
+    float: right;
+}
+
+.mainMenu2 li {
+    display: inline-block;
+    float: left;
+    margin: 8px;
+    width: 150px;
+    height: 50px;
+    background: white;
+    padding: 12px;
+    text-decoration: none;
+    font-family: Lobster;
+    font-size: 25px;
+    color: mintcream;
+    box-shadow: 2px 8px 31px rgba(0,0,0,0.25);
+    border-radius: 18px;
+}
+
+
+.mainMenu2 li:hover {
+    background: linear-gradient(360deg, #FF0000 0%, #FF9A9A 131.94%); 
+    color: white;
+}
+
+
+a {
+    text-decoration: none;
+    background: linear-gradient(360deg, #FF0000 0%, #FF9A9A 131.94%);  
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.projet1{
+    width: 30%;
+    height: 200px;
+    background: white;
+    box-shadow: 2px 8px 31px rgba(0,0,0,0.25);
+    border-radius: 18px;
+    background: url(../images/clearview.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.projet2{
+    width: 30%;
+    height: 200px;
+    background: white;
+    box-shadow: 2px 8px 31px rgba(0,0,0,0.25);
+    border-radius: 18px;
+}
+
+.projet3{
+    width: 30%;
+    height: 200px;
+    background: white;
+    box-shadow: 2px 8px 31px rgba(0,0,0,0.25);
+    border-radius: 18px;
+}
+
+#projects_web {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+@media(max-width: 800px){
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(252, 182, 136);
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

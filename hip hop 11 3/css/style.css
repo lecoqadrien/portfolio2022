@@ -1,0 +1,601 @@
+*{
+  margin: 0;
+  padding: 0;
+    font-family: 'Avenir', sans-serif;
+}
+
+body{
+  margin: 0;
+}
+
+/*Navigation header*/
+
+header{
+  width: 100%;
+  background: none;
+}
+
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+    width: 100%;
+    background-color: orange;
+
+}
+
+nav li{
+    float: left;
+    width: 14.2857142857%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+    height: 100%;
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+.etiquette a {
+    background: #7a4300;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: white;
+}
+
+
+
+.etiquette a:hover {
+    color: orange;
+}
+
+/*Bar chronologique*/
+
+.boxbar{
+  width: 100%;
+  height: 2px;
+  position: sticky;
+  top: 5%;
+  left: 5%;
+  margin: 0 auto;
+}
+
+.bar{
+  height: 4px;
+  background: #794319;
+}
+
+
+
+
+/* ------------------*/
+
+main section {
+  width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+main section img {
+  width: 100%;
+  cursor: pointer;
+}
+
+
+main section h1 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Chelsea Market', sans-serif;
+    padding-top: 8px;
+    width: 100%;
+}
+
+main section h2 {
+    font-size: 40px;
+    font-family: 'Chelsea Market', 'Passion One' , sans-serif;
+    padding-top: 8px;
+    width: 100%;
+    margin: 3% 0%;
+}
+
+section:nth-child(even){
+  display: none;
+}
+
+section:nth-child(odd){
+  display: block;
+  margin-top: 100px;
+}
+
+#story.is-reached {
+    opacity: 1;
+}
+
+.gris {
+    background-color:darkgrey;
+}
+
+/* Naissance partie 1 */
+
+main section:first-child > div:first-child {
+    background-image: url(../images/brush.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main section:first-child article:nth-child(2) {
+    float: left;
+    width: 60%;
+}
+
+main section:first-child article:nth-child(3) {
+    float: left;
+    width: 38%;
+    cursor: pointer;
+    margin-top: 25%;
+    color: #fb904a;
+    font-size: 25px;
+    border: 3px solid #fb904a;
+    border-radius: 10% / 60%;
+}
+
+main section:first-child article:nth-child(3):hover {
+    color: black;
+    border: 3px solid black;
+}
+
+main section:first-child article:nth-child(3) div {
+    font-family: 'Chelsea Market';
+}
+
+/* Naissance partie 2 */
+
+section:nth-child(2){
+  width: 80%;
+  height: 100%;
+  
+}
+
+section:nth-child(2) img{
+    width: 50%;
+    margin-bottom: 5%
+}
+
+section:nth-child(2) article img{
+    width: 80%;
+}
+
+section:nth-child(2) p{
+    margin-bottom: 5%;
+}
+
+section:nth-child(2) p:nth-child(3){
+    margin-top: 5%;
+}
+
+section:nth-child(2) article {
+    float: left;
+    width: 50%;
+}
+
+section:nth-child(2) article:nth-child(6) {
+    margin-top: 5%;
+}
+
+section:nth-child(2) > div {
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+
+
+/*Mouvement partie 1 */
+
+main section:nth-child(3) > div:first-child {
+    background-image: url(../images/brush.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    clear: left;
+}
+
+main section:nth-child(3) article {
+    float: left;
+    width: 60%;
+}
+
+main section:nth-child(3) article:nth-child(2) {
+    float: left;
+    width: 38%;
+    cursor: pointer;
+    margin-top: 25%;
+    color: #fb904a;
+    font-size: 25px;
+    border: 3px solid #fb904a;
+    border-radius: 10% / 60%;
+}
+
+main section:nth-child(3) article:nth-child(2):hover {
+    color: black;
+    border: 3px solid black;
+}
+
+main section:nth-child(3) article:nth-child(2) div {
+    font-family: 'Chelsea Market';
+}
+
+/*Mouvement partie 2 */
+
+main section:nth-child(4) {
+    clear: left;
+    width: 80%;
+}
+
+main section:nth-child(4) article {
+    float: left;
+    width: 50%;
+}
+
+main section:nth-child(4) article img {
+    width: 50%;
+}
+
+main section:nth-child(4) article p {
+    margin: auto;
+    margin-top: 5%;   
+}
+
+main section:nth-child(4) article h3 {
+    margin: auto;
+    margin-top: 10%; 
+    font-size: 30px;
+}
+
+main section:nth-child(4) div {
+    clear: left;
+}
+
+main section:nth-child(4) div:nth-child(6) {
+    margin-bottom: 25%;
+}
+
+/* Carrousel - acteurs */
+
+/*Carrousel */
+
+
+
+section:nth-child(5) > div{
+ margin-bottom: 5%;
+
+}
+
+section:nth-child(5) .carousel-items{
+ width: 100%;
+  height: 30em;
+  margin-left: auto;
+  margin-right: auto;
+  background:none;
+  display: flex;
+  align-items: center;
+
+}
+
+main section:nth-child(5) > div:first-child {
+    background-image: url(../images/brush.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    clear: left;
+}
+
+section:nth-child(5) .slidershow{
+  width: 700px;
+  height: auto;
+  overflow: hidden;
+}
+
+section:nth-child(5) .slides{
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+section:nth-child(5) .navigation{
+  display: flex;
+  width: 100%;
+max-height:100%;
+  margin: auto;
+    align-items: center;
+  justify-content: center;
+}
+
+section:nth-child(5) .bare{
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fb904a;
+  border-radius: 50%;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+section:nth-child(5) .bare:hover{
+  background: #fb904a;
+}
+
+section:nth-child(5) input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+section:nth-child(5) .slides{
+  width: 500%;
+  height: auto;
+  display: flex;
+}
+
+section:nth-child(5) .slides div img{
+  width: 50%;
+}
+
+section:nth-child(5) .slidershow .slides p:nth-child(2) {
+    font-size: 24px;
+    margin: 3% 0%;
+    font-weight: bold;
+}
+
+section:nth-child(5) .slidershow .slides p:nth-child(3) {
+    font-size: 18px;
+    margin: 3% 0%;
+}
+
+section:nth-child(5) .slidershow .slides p:nth-child(4) {
+    font-size: 18px;
+    margin: 3% 0%;
+}
+
+section:nth-child(5) .slide2{
+  width: 20%;
+  transition: 0.6s;
+}
+
+section:nth-child(5) .slide3{
+  width: 20%;
+  transition: 0.6s;
+}
+
+section:nth-child(5) .slide{
+  width: 20%;
+  transition: 0.6s;
+}
+
+section:nth-child(5) .navigation {
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+#r5:checked ~ .s1{
+  margin-left: -80%;
+}
+
+.picture{
+  width: 30%;
+}
+
+main section:nth-child(7) > div:first-child {
+    background-image: url(../images/brush.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    clear: left;
+    margin-bottom: 5%;
+}
+
+main section:nth-child(7) div p:first-child {
+    font-size: 30px;
+    margin: 5% 0%;
+    clear: left;
+}
+
+main section:nth-child(7) article {
+    width: 100%;
+    clear: left;
+}
+
+main section:nth-child(7) article div {
+    float: left;
+    width: 50%;
+    margin: 5% 0%
+}
+
+main section:nth-child(7) article .container {
+    padding: 2%;
+    width: 46%
+}
+
+main section:nth-child(7) article img {
+    width: 80%;
+}
+
+main section:nth-child(8) h2 {
+    clear: left;
+}
+
+
+/* Footer */
+
+footer {
+    height: 200px;
+    background-color: #2f2f40;
+    color: white;
+    clear: left;
+}
+
+footer article {
+    float: left;
+    width: 30%;
+}
+
+footer article:nth-child(even) {
+    width: 5%;
+    float: left;
+}
+
+footer article:nth-child(even) div {
+    background-color: white;
+    width: 4%;
+    height: 100px;
+    margin: 50% 25%;
+}
+
+footer article:nth-child(odd) div {
+    padding: 10% 0%;
+}
+
+footer article div a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 2% 0%;
+    text-decoration: none;
+    color: white;
+}
+
+footer article div p {
+    text-align: center;
+    margin: 2% 0%;
+    color: white;
+}
+
+footer article a:hover {
+    color: #fb904a;
+}
+
+footer article:nth-child(3) div {
+    width: 100%;
+}
+
+footer article:nth-child(5) div {
+    padding: 5% 0%;
+}
+
+.bouton_Close{
+  border: 3px solid #fb904a;
+  border-radius: 23px;
+  width: 30%;
+  height: 30px;
+  cursor: pointer;
+  margin: auto;
+     color: #fb904a;
+  font-size: 20px;
+}
+
+.bouton_Close:hover{
+  border: 3px solid black;
+     color: black;
+}
+
+section:nth-child(4) .croix2 {
+  position: relative;
+  width: 30px;
+  right: 60%;
+  z-index:1;
+}
+
+
+section:nth-child(7) .croix3 {
+  position: relative;
+  width: 30px;
+  right: 60%;
+  z-index:1;
+}
+
+.slide .imgBox {
+      height: 300px;
+      background: url(../images/illustrations/herc/herc.png) no-repeat;
+      background-size: contain;
+      background-position:center;
+    }
+
+.slide .imgBox:hover {
+      height: 300px;
+      background: url(../images/illustrations/herc/herc-or.png) no-repeat;
+      background-size: contain;
+      background-position:center;
+    }
+
+.slide2 .imgBox {
+      height: 300px;
+      background: url(../images/illustrations/flash/flash.png) no-repeat;
+      background-size: contain;
+      background-position:center;
+    }
+
+.slide2 .imgBox:hover {
+      height: 300px;
+      background: url(../images/illustrations/flash/flash-or.png) no-repeat;
+      background-size: contain;
+      background-position:center;
+    }
+
+.slide3 .imgBox {
+      height: 300px;
+      background: url(../images/illustrations/run/rundmc.png) no-repeat;
+      background-size: contain;
+      background-position:center;
+    }
+
+.slide3 .imgBox:hover {
+      height: 300px;
+      background: url(../images/illustrations/run/rundmc-or.png) no-repeat;
+      background-size: contain;
+      background-position:center;
+    }
+
+.icet {
+      height: 300px;
+      background: url(../images/illustrations/icet/icet.png) no-repeat;
+      background-size: contain;
+      background-position:center;
+    }
+
+.slides .slide3:nth-child(8) {
+      background-image: none;
+    background-color: red;
+    }
+
+}
